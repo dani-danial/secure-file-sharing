@@ -1,16 +1,74 @@
-# React + Vite
+# Secure File Sharing Platform
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern and secure file-sharing platform built with React and Tailwind CSS.  
+This project allows users to upload files, generate shareable links, preview uploads, and manage file-sharing securely.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Features
 
-## React Compiler
+### Frontend Features
+- Drag-and-drop file upload
+- Responsive modern UI
+- File preview support
+- Upload progress indicator
+- Shareable file links
+- Dashboard interface
+- Mobile responsive design
+- Tailwind CSS styling
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### Backend Features (Planned)
+- Secure file upload handling
+- Signed URL generation
+- Expiring download links
+- Download tracking
+- File metadata management
+- Permission controls
 
-## Expanding the ESLint configuration
+### Bonus Features
+- Password-protected links
+- Virus scanning integration
+- Cloud storage support
+- QR code sharing
+- Dark mode support
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## Tech Stack
+
+### Frontend
+- React
+- Tailwind CSS
+- Axios
+- React Dropzone
+- Lucide React
+
+### Backend
+- Laravel / Node.js (planned)
+
+### Database
+- MySQL
+
+### Storage
+- AWS S3 / Firebase Storage
+
+---
+
+## Project Structure
+
+```bash
+src/
+ ├── components/
+ │     ├── UploadBox.jsx
+ │     ├── Navbar.jsx
+ │     ├── ProgressBar.jsx
+ │
+ ├── pages/
+ │     ├── Home.jsx
+ │     ├── Dashboard.jsx
+ │
+ ├── services/
+ │     └── api.js
+ │
+ ├── App.jsx
+ └── main.jsx
