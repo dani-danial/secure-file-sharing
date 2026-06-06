@@ -3,8 +3,8 @@ import { createApp } from './app.js'
 
 const app = createApp()
 
-const server = app.listen(env.PORT, () => {
-  console.log(`Backend listening on http://localhost:${env.PORT}`)
+const server = app.listen(env.PORT, '0.0.0.0', () => {
+  console.log(`Backend listening on port ${env.PORT}`)
 })
 
 const shutdown = (signal) => {
